@@ -3,7 +3,7 @@
 //  
 //
 //  Created by J on 2014/2/26.
-//  Copyright © 2018年 J. All rights reserved.
+//  Copyright © 2017年 J. All rights reserved.
 //
 
 #import "NSArray+MSSafe.h"

@@ -10,6 +10,7 @@
 
 @interface NSArray (MSSafe)
 
+- (id)objectAtIndexSafe:(NSUInteger)index;
 - (id)objectAtIndex:(NSUInteger)index kindOfClass:(Class)aClass;
 - (id)objectAtIndex:(NSUInteger)index memberOfClass:(Class)aClass;
 - (id)objectAtIndex:(NSUInteger)index defaultValue:(id)value;

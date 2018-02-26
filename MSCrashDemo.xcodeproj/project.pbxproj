@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F3204456E50003312C /* NSArray+MSSafe.m */; };
 		09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1412044421C00EC5259 /* AppDelegate.m */; };
 		09E1E1452044421C00EC5259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1442044421C00EC5259 /* ViewController.m */; };
 		09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E1492044421C00EC5259 /* Assets.xcassets */; };
 		09E1E1502044421C00EC5259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E14F2044421C00EC5259 /* main.m */; };
-		09E1E1592044429600EC5259 /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1582044429600EC5259 /* NSArray+MSSafe.m */; };
 		09E1E1632044531C00EC5259 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E14E2044421C00EC5259 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A466F3204456E50003312C /* NSArray+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MSSafe.m"; sourceTree = "<group>"; };
+		09A466F4204456E50003312C /* NSArray+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MSSafe.h"; sourceTree = "<group>"; };
 		09E1E13D2044421C00EC5259 /* MSCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1E1402044421C00EC5259 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E1E1412044421C00EC5259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,8 +26,6 @@
 		09E1E1492044421C00EC5259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E1E14E2044421C00EC5259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09E1E14F2044421C00EC5259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09E1E1572044429600EC5259 /* NSArray+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MSSafe.h"; sourceTree = "<group>"; };
-		09E1E1582044429600EC5259 /* NSArray+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MSSafe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A466F2204456E50003312C /* MSCrashProtector */ = {
+			isa = PBXGroup;
+			children = (
+				09A466F4204456E50003312C /* NSArray+MSSafe.h */,
+				09A466F3204456E50003312C /* NSArray+MSSafe.m */,
+			);
+			path = MSCrashProtector;
+			sourceTree = SOURCE_ROOT;
+		};
 		09E1E1342044421C00EC5259 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +67,7 @@
 		09E1E13F2044421C00EC5259 /* MSCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
-				09E1E1562044427C00EC5259 /* MSCrashProtector */,
+				09A466F2204456E50003312C /* MSCrashProtector */,
 				09E1E1432044421C00EC5259 /* ViewController.h */,
 				09E1E1442044421C00EC5259 /* ViewController.m */,
 				09E1E14E2044421C00EC5259 /* Info.plist */,
@@ -68,15 +77,6 @@
 				09E1E14F2044421C00EC5259 /* main.m */,
 			);
 			path = MSCrashDemo;
-			sourceTree = "<group>";
-		};
-		09E1E1562044427C00EC5259 /* MSCrashProtector */ = {
-			isa = PBXGroup;
-			children = (
-				09E1E1572044429600EC5259 /* NSArray+MSSafe.h */,
-				09E1E1582044429600EC5259 /* NSArray+MSSafe.m */,
-			);
-			path = MSCrashProtector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					09E1E13C2044421C00EC5259 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -150,9 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E1E1452044421C00EC5259 /* ViewController.m in Sources */,
-				09E1E1592044429600EC5259 /* NSArray+MSSafe.m in Sources */,
 				09E1E1502044421C00EC5259 /* main.m in Sources */,
 				09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */,
+				09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +267,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2DRDDS6JU;
 				INFOPLIST_FILE = MSCrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzj.MSCrashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,8 +284,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2DRDDS6JU;
 				INFOPLIST_FILE = MSCrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzj.MSCrashDemo;
