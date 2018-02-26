@@ -27,7 +27,7 @@ An Global protection scheme..
 
 ```objc
         
- //NSArray
+    //NSArray
     NSArray* arr = @[@"1"];
     [arr objectAtIndexSafe:10];
     id obj = [arr objectAtIndex:0 kindOfClass:[NSString class]];
