@@ -4,10 +4,6 @@
 An Global protection scheme..
 
 
-## Features
-
-- block syntax
-
 ## Installation
 
 ### Cocoapods(Recommended)
