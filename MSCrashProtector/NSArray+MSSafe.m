@@ -173,7 +173,7 @@
 - (void)replaceObjectAtInBoundaryIndex:(NSUInteger)index withObject:(id)anObject{
     
     if(index < self.count && anObject!=nil){
-        [self insertObject:anObject atIndex:index];
+        [self replaceObjectAtIndex:index withObject:anObject];
     }
 }
 
