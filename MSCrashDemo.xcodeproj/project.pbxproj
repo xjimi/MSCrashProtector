@@ -10,7 +10,7 @@
 		09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F3204456E50003312C /* NSArray+MSSafe.m */; };
 		09A466F82044769A0003312C /* NSDictionary+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F62044769A0003312C /* NSDictionary+MSSafe.m */; };
 		09A466FB20447EC50003312C /* NSString+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466FA20447EC50003312C /* NSString+MSSafe.m */; };
-		09A466FD20447FBC0003312C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A466FC20447FBC0003312C /* Default-568h@2x.png */; };
+		09A466FF2044828F0003312C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A466FE2044828F0003312C /* Launch Screen.storyboard */; };
 		09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1412044421C00EC5259 /* AppDelegate.m */; };
 		09E1E1452044421C00EC5259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1442044421C00EC5259 /* ViewController.m */; };
 		09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E1492044421C00EC5259 /* Assets.xcassets */; };
@@ -25,7 +25,7 @@
 		09A466F72044769A0003312C /* NSDictionary+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MSSafe.h"; sourceTree = "<group>"; };
 		09A466F920447EC50003312C /* NSString+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSSafe.h"; sourceTree = "<group>"; };
 		09A466FA20447EC50003312C /* NSString+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MSSafe.m"; sourceTree = "<group>"; };
-		09A466FC20447FBC0003312C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		09A466FE2044828F0003312C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		09E1E13D2044421C00EC5259 /* MSCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1E1402044421C00EC5259 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E1E1412044421C00EC5259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,7 +63,6 @@
 		09E1E1342044421C00EC5259 = {
 			isa = PBXGroup;
 			children = (
-				09A466FC20447FBC0003312C /* Default-568h@2x.png */,
 				09E1E13F2044421C00EC5259 /* MSCrashDemo */,
 				09E1E13E2044421C00EC5259 /* Products */,
 			);
@@ -87,6 +86,7 @@
 				09E1E1402044421C00EC5259 /* AppDelegate.h */,
 				09E1E1412044421C00EC5259 /* AppDelegate.m */,
 				09E1E1492044421C00EC5259 /* Assets.xcassets */,
+				09A466FE2044828F0003312C /* Launch Screen.storyboard */,
 				09E1E14F2044421C00EC5259 /* main.m */,
 			);
 			path = MSCrashDemo;
@@ -150,9 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A466FF2044828F0003312C /* Launch Screen.storyboard in Resources */,
 				09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */,
 				09E1E1632044531C00EC5259 /* Info.plist in Resources */,
-				09A466FD20447FBC0003312C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +287,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2DRDDS6JU;
 				INFOPLIST_FILE = MSCrashDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzj.MSCrashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +305,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2DRDDS6JU;
 				INFOPLIST_FILE = MSCrashDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzj.MSCrashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
