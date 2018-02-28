@@ -49,9 +49,8 @@
 
 - (NSString *)stringAtIndex:(NSUInteger)index defaultValue:(NSString *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object&&
-       [value isKindOfClass:NSString.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSString.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -59,9 +58,8 @@
 
 - (NSNumber *)numberAtIndex:(NSUInteger)index defaultValue:(NSNumber *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object&&
-       [value isKindOfClass:NSNumber.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -69,9 +67,8 @@
 
 - (NSDictionary *)dictionaryAtIndex:(NSUInteger)index defaultValue:(NSDictionary *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object&&
-       [value isKindOfClass:NSDictionary.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSDictionary.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -79,8 +76,8 @@
 
 - (NSArray *)arrayAtIndex:(NSUInteger)index defaultValue:(NSArray *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object && [value isKindOfClass:NSArray.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSArray.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -88,9 +85,8 @@
 
 - (NSData *)dataAtIndex:(NSUInteger)index defaultValue:(NSData *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object&&
-       [value isKindOfClass:NSData.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSData.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -98,9 +94,8 @@
 
 - (NSDate *)dateAtIndex:(NSUInteger)index defaultValue:(NSDate *)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if(!object&&
-       [value isKindOfClass:NSDate.class]){
+    id object = [self objectAtIndex:index kindOfClass:NSDate.class];
+    if(!object){
         object = value;
     }
     return value;
@@ -108,17 +103,18 @@
 
 - (float)floatAtIndex:(NSUInteger)index defaultValue:(float)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if([object respondsToSelector:@selector(floatValue)]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
+    if(object){
         return  [object floatValue];
     }
+
     return value;
 }
 
 - (double)doubleAtIndex:(NSUInteger)index defaultValue:(double)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if([object respondsToSelector:@selector(doubleValue)]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
+    if(object){
         return  [object doubleValue];
     }
     return value;
@@ -126,8 +122,8 @@
 
 - (NSInteger)integerAtIndex:(NSUInteger)index defaultValue:(NSInteger)value{
 
-    id object = [self objectAtIndexSafe:index];
-    if([object respondsToSelector:@selector(integerValue)]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
+    if(object){
         return  [object integerValue];
     }
     return value;
@@ -135,8 +131,8 @@
 
 - (NSUInteger)unintegerAtIndex:(NSUInteger)index defaultValue:(NSUInteger)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if([object respondsToSelector:@selector(unsignedIntegerValue)]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
+    if(object){
         return  [object unsignedIntegerValue];
     }
     return value;
@@ -144,8 +140,8 @@
 
 - (BOOL)boolAtIndex:(NSUInteger)index defaultValue:(BOOL)value{
     
-    id object = [self objectAtIndexSafe:index];
-    if([object respondsToSelector:@selector(boolValue)]){
+    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
+    if(object){
         return  [object boolValue];
     }
     return value;

@@ -12,6 +12,8 @@
 @interface NSDictionary (MSSafe)
 
 - (id)objectForKey:(NSString *)aKey defaultValue:(id)value;
+- (id)objectForKey:(NSString *)aKey kindOfClass:(Class)aClass;
+- (id)objectForKey:(NSString *)aKey memberOfClass:(Class)aClass;
 - (NSString *)stringForKey:(NSString *)aKey defaultValue:(NSString *)value;
 - (NSArray *)arrayForKey:(NSString *)aKey defaultValue:(NSArray *)value;
 - (NSDictionary *)dictionaryForKey:(NSString *)aKey defaultValue:(NSDictionary *)value;
