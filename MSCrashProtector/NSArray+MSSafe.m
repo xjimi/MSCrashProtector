@@ -103,18 +103,17 @@
 
 - (float)floatAtIndex:(NSUInteger)index defaultValue:(float)value{
     
-    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
-    if(object){
+    id object = [self objectAtIndexSafe:index];
+    if([object respondsToSelector:@selector(floatValue)]){
         return  [object floatValue];
     }
-
     return value;
 }
 
 - (double)doubleAtIndex:(NSUInteger)index defaultValue:(double)value{
     
-    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
-    if(object){
+    id object = [self objectAtIndexSafe:index];
+    if([object respondsToSelector:@selector(doubleValue)]){
         return  [object doubleValue];
     }
     return value;
@@ -122,8 +121,8 @@
 
 - (NSInteger)integerAtIndex:(NSUInteger)index defaultValue:(NSInteger)value{
 
-    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
-    if(object){
+    id object = [self objectAtIndexSafe:index];
+    if([object respondsToSelector:@selector(integerValue)]){
         return  [object integerValue];
     }
     return value;
@@ -131,8 +130,8 @@
 
 - (NSUInteger)unintegerAtIndex:(NSUInteger)index defaultValue:(NSUInteger)value{
     
-    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
-    if(object){
+    id object = [self objectAtIndexSafe:index];
+    if([object respondsToSelector:@selector(unsignedIntegerValue)]){
         return  [object unsignedIntegerValue];
     }
     return value;
@@ -140,8 +139,8 @@
 
 - (BOOL)boolAtIndex:(NSUInteger)index defaultValue:(BOOL)value{
     
-    id object = [self objectAtIndex:index kindOfClass:NSNumber.class] ?: [self objectAtIndex:index kindOfClass:NSString.class];
-    if(object){
+    id object = [self objectAtIndexSafe:index];
+    if([object respondsToSelector:@selector(boolValue)]){
         return  [object boolValue];
     }
     return value;
