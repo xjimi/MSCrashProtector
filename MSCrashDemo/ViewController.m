@@ -23,24 +23,25 @@
     NSArray* arr = @[@"1"];
     [arr objectAtIndexSafe:10];
     id obj = [arr objectAtIndex:0 kindOfClass:[NSString class]];
-    NSLog(@"@%@",obj);
+    NSLog(@"arr:%@",obj);
     
     //NSMutableArray
     NSMutableArray* marr = [NSMutableArray array];
     [marr addObjectSafe:nil];
     [marr removeObjectAtIndexInBoundary:100];
     [marr insertObject:@111 atIndexInBoundary:100];
+    NSLog(@"marr:%@",marr);
 
     
     //NSDictionary
     NSDictionary* dic = [NSDictionary dictionary];
     [dic objectForKey:nil defaultValue:@"test"];
+    NSLog(@"dic:%@",dic);
 
     //NSMutableDictionary
     NSMutableDictionary* mdic = [NSMutableDictionary dictionary];
     [mdic setObjectSafe:nil forKey:nil];
-    
-
+    NSLog(@"mdic:%@",mdic);
 }
 
 - (void)viewDidLoad {
