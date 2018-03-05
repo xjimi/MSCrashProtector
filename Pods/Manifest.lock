@@ -1,11 +1,11 @@
 PODS:
-  - MSCrashProtector (1.0.0)
+  - MSCrashProtector (1.1.0)
 
 DEPENDENCIES:
   - MSCrashProtector
 
 SPEC CHECKSUMS:
-  MSCrashProtector: 48c45cd1cba5028c295cdfd06b965450b2170c33
+  MSCrashProtector: 6cce5500153d01045613ecbfaba0e04023d0450f
 
 PODFILE CHECKSUM: 046996639126792804eb73583ab1b09bbf2f1f91
 
