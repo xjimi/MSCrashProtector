@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-
-#import "NSArray+MSSafe.h"
-#import "NSDictionary+MSSafe.h"
-#import "NSMutableSet+MSSafe.h"
+#import "MSCrashProtector.h"
 
 @interface ViewController ()
 
