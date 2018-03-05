@@ -31,7 +31,7 @@ An Global protection scheme..
     NSArray* arr = @[@"1"];
     [arr objectAtIndexSafe:10];
     id obj = [arr objectAtIndex:0 kindOfClass:[NSString class]];
-    NSLog(@"@%@",obj);
+    NSLog(@"%@",obj);
     
     //NSMutableArray
     NSMutableArray* marr = [NSMutableArray array];
