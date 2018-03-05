@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A05DFF9B399F35701F289C0464FC735 /* NSArray+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A81A73DD83A45536900BE8A6C1B10D9 /* NSArray+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B5045C416B15CA9A5C73A32020C5683 /* NSString+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 81753819EF683C979950B72922C3429B /* NSString+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BD254FF177DEE5EE6B6E7F53862D2B4 /* MSCrashProtector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA015147C38D76435CD9D032E4D2CA2 /* MSCrashProtector-dummy.m */; };
-		28209DB8F06AB862EF359828D6901029 /* NSDictionary+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A0A066C019C8278A9FCCF2F9F43C90 /* NSDictionary+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F3333AA57C7F1EE1FA99E1E30D77C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2285214432682EE7792839AA323D02AE /* NSMutableSet+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 42568124BE836731E7720EEC3D075872 /* NSMutableSet+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		249225D91FC58DA75569BB055DF8CFE4 /* NSString+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F2260739FE246B2C1E106590250EB01F /* NSString+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		283CA9074309F3B5DD6F027C1B8A0F11 /* NSString+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFE13BEC7D858B6A6A83EA8DCBC0024 /* NSString+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D28EAC2CDC58763135A615E0EA78E09 /* NSArray+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C8563C7B121F45906A4387E4F0B00F /* NSArray+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58868F8640017B2CD24DD8CA1B148610 /* NSMutableSet+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = FB06C2B83D29B82BC5E2A6E8ADF69D1E /* NSMutableSet+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		682AA620CC1E30F66299777074B9B60D /* Pods-MSCrashDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D93CCA3BB3AF9D6ED8BD01B29DBB61 /* Pods-MSCrashDemo-dummy.m */; };
-		71410AF5CFE9086CCB5A8FDAE6707B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		8DCB5C4C03310DCA6D1DD7F98F6F5FC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A3187ED54B013F2A7EEB9CAACB49DD9F /* NSDictionary+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F323C6C3926D79964BA7D07D415F90 /* NSDictionary+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C8F38F5B73BF62528B48877E8E6DE06D /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A77ED10B2BC09410B41714B3CB1931 /* NSArray+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FE91A0EC0F893E7F22E3C8857A0430D5 /* NSString+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A6906907A4F0D1CAA88D72BFC9687 /* NSString+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A61D8B7856ABAACCDA07CB2D8AAC7753 /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDD94A790B092758EDD14DD4DAEB12 /* NSArray+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8187AF396A2AE8F9F3ACDCC58777174 /* MSCrashProtector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D8BA92F94B98FD6A04FD683447E356 /* MSCrashProtector-dummy.m */; };
+		CBC8C1FF989A6E9D24ED6B18C3613B1A /* NSDictionary+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF0AC546260F7BBAA087D80EF2A25D /* NSDictionary+MSSafe.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DE696B8C82E18E3E67E48235C03B8C23 /* NSDictionary+MSSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 0309FAB2ECCAD1E2299298473387C7B6 /* NSDictionary+MSSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,32 +26,34 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBBEFC82FD77DA427D3A223434553416;
+			remoteGlobalIDString = 766C0D4458710770CCC4D6EB38DCCD73;
 			remoteInfo = MSCrashProtector;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		133C699A22033522E55515FAEF289295 /* MSCrashProtector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSCrashProtector.xcconfig; sourceTree = "<group>"; };
+		0309FAB2ECCAD1E2299298473387C7B6 /* NSDictionary+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MSSafe.h"; path = "MSCrashProtector/NSDictionary+MSSafe.h"; sourceTree = "<group>"; };
+		07EF0AC546260F7BBAA087D80EF2A25D /* NSDictionary+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MSSafe.m"; path = "MSCrashProtector/NSDictionary+MSSafe.m"; sourceTree = "<group>"; };
 		14B7F393CDB52091A6F1C451345E66F5 /* Pods-MSCrashDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSCrashDemo-resources.sh"; sourceTree = "<group>"; };
 		2C2B9D0C363C6A103305C70B9F4D9B08 /* Pods-MSCrashDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSCrashDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4F8A6906907A4F0D1CAA88D72BFC9687 /* NSString+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MSSafe.m"; path = "MSCrashProtector/NSString+MSSafe.m"; sourceTree = "<group>"; };
+		42568124BE836731E7720EEC3D075872 /* NSMutableSet+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+MSSafe.m"; path = "MSCrashProtector/NSMutableSet+MSSafe.m"; sourceTree = "<group>"; };
+		4337810F74C7971666E8FB64DD0260B5 /* MSCrashProtector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSCrashProtector-prefix.pch"; sourceTree = "<group>"; };
+		4EDDD94A790B092758EDD14DD4DAEB12 /* NSArray+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MSSafe.m"; path = "MSCrashProtector/NSArray+MSSafe.m"; sourceTree = "<group>"; };
 		59142B689B64952006DA07EF74F1598F /* libMSCrashProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMSCrashProtector.a; path = libMSCrashProtector.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F608B1633C3E8AC5E89B9512FC31AC7 /* MSCrashProtector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSCrashProtector-prefix.pch"; sourceTree = "<group>"; };
-		5FA015147C38D76435CD9D032E4D2CA2 /* MSCrashProtector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSCrashProtector-dummy.m"; sourceTree = "<group>"; };
+		59D8BA92F94B98FD6A04FD683447E356 /* MSCrashProtector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSCrashProtector-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6A81A73DD83A45536900BE8A6C1B10D9 /* NSArray+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MSSafe.h"; path = "MSCrashProtector/NSArray+MSSafe.h"; sourceTree = "<group>"; };
-		81753819EF683C979950B72922C3429B /* NSString+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MSSafe.h"; path = "MSCrashProtector/NSString+MSSafe.h"; sourceTree = "<group>"; };
-		87A0A066C019C8278A9FCCF2F9F43C90 /* NSDictionary+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MSSafe.h"; path = "MSCrashProtector/NSDictionary+MSSafe.h"; sourceTree = "<group>"; };
 		8DA14180998A12DE6F7D3E0003AF7D87 /* libPods-MSCrashDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MSCrashDemo.a"; path = "libPods-MSCrashDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		946C7C351660629F31D8AC9EC4A9FEE5 /* Pods-MSCrashDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSCrashDemo-frameworks.sh"; sourceTree = "<group>"; };
 		97A8D84574B1B38804B33F654E752145 /* Pods-MSCrashDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSCrashDemo.release.xcconfig"; sourceTree = "<group>"; };
-		B5A77ED10B2BC09410B41714B3CB1931 /* NSArray+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MSSafe.m"; path = "MSCrashProtector/NSArray+MSSafe.m"; sourceTree = "<group>"; };
-		C1F323C6C3926D79964BA7D07D415F90 /* NSDictionary+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MSSafe.m"; path = "MSCrashProtector/NSDictionary+MSSafe.m"; sourceTree = "<group>"; };
+		98C8563C7B121F45906A4387E4F0B00F /* NSArray+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MSSafe.h"; path = "MSCrashProtector/NSArray+MSSafe.h"; sourceTree = "<group>"; };
+		CFFE13BEC7D858B6A6A83EA8DCBC0024 /* NSString+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MSSafe.h"; path = "MSCrashProtector/NSString+MSSafe.h"; sourceTree = "<group>"; };
+		DC80A87FFBC2355F5F8E01DFFF7DF76F /* MSCrashProtector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSCrashProtector.xcconfig; sourceTree = "<group>"; };
 		E30E740EE0B4DAE000EA91D582B07402 /* Pods-MSCrashDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSCrashDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E4186A70B749D03FA907504D2D418B43 /* Pods-MSCrashDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSCrashDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2260739FE246B2C1E106590250EB01F /* NSString+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MSSafe.m"; path = "MSCrashProtector/NSString+MSSafe.m"; sourceTree = "<group>"; };
 		F5D93CCA3BB3AF9D6ED8BD01B29DBB61 /* Pods-MSCrashDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSCrashDemo-dummy.m"; sourceTree = "<group>"; };
+		FB06C2B83D29B82BC5E2A6E8ADF69D1E /* NSMutableSet+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+MSSafe.h"; path = "MSCrashProtector/NSMutableSet+MSSafe.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDC593D51722F210BBE8A8D908094AEB /* Frameworks */ = {
+		A458D08AEC86371DF871BADBEC839AA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71410AF5CFE9086CCB5A8FDAE6707B8B /* Foundation.framework in Frameworks */,
+				1F3333AA57C7F1EE1FA99E1E30D77C95 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,17 @@
 				8DA14180998A12DE6F7D3E0003AF7D87 /* libPods-MSCrashDemo.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		167BA8D7D13324607A7B8C9215582404 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC80A87FFBC2355F5F8E01DFFF7DF76F /* MSCrashProtector.xcconfig */,
+				59D8BA92F94B98FD6A04FD683447E356 /* MSCrashProtector-dummy.m */,
+				4337810F74C7971666E8FB64DD0260B5 /* MSCrashProtector-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MSCrashProtector";
 			sourceTree = "<group>";
 		};
 		2F456DFF71630F4D5611D21EB9E91379 /* Pods-MSCrashDemo */ = {
@@ -96,47 +111,21 @@
 			path = "Target Support Files/Pods-MSCrashDemo";
 			sourceTree = "<group>";
 		};
-		42353A47106EE486E0AF9DA95EE32FA9 /* MSCrashProtector */ = {
-			isa = PBXGroup;
-			children = (
-				6A81A73DD83A45536900BE8A6C1B10D9 /* NSArray+MSSafe.h */,
-				B5A77ED10B2BC09410B41714B3CB1931 /* NSArray+MSSafe.m */,
-				87A0A066C019C8278A9FCCF2F9F43C90 /* NSDictionary+MSSafe.h */,
-				C1F323C6C3926D79964BA7D07D415F90 /* NSDictionary+MSSafe.m */,
-				81753819EF683C979950B72922C3429B /* NSString+MSSafe.h */,
-				4F8A6906907A4F0D1CAA88D72BFC9687 /* NSString+MSSafe.m */,
-				6076DC4313CB29644F140F9299E82942 /* Support Files */,
-			);
-			name = MSCrashProtector;
-			path = MSCrashProtector;
-			sourceTree = "<group>";
-		};
-		6076DC4313CB29644F140F9299E82942 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				133C699A22033522E55515FAEF289295 /* MSCrashProtector.xcconfig */,
-				5FA015147C38D76435CD9D032E4D2CA2 /* MSCrashProtector-dummy.m */,
-				5F608B1633C3E8AC5E89B9512FC31AC7 /* MSCrashProtector-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MSCrashProtector";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				846A0CCE3294CBA096F09152C6351915 /* Pods */,
+				943A242216E256C08A92CF7EACF10A9C /* Pods */,
 				0094FB1D4583312E46C6F2BA0AB32082 /* Products */,
 				EF770F89FCCA459EEA5FB266C0766493 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		846A0CCE3294CBA096F09152C6351915 /* Pods */ = {
+		943A242216E256C08A92CF7EACF10A9C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42353A47106EE486E0AF9DA95EE32FA9 /* MSCrashProtector */,
+				C1070A37DB52E84851DC102B0A825DF1 /* MSCrashProtector */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,6 +136,23 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1070A37DB52E84851DC102B0A825DF1 /* MSCrashProtector */ = {
+			isa = PBXGroup;
+			children = (
+				98C8563C7B121F45906A4387E4F0B00F /* NSArray+MSSafe.h */,
+				4EDDD94A790B092758EDD14DD4DAEB12 /* NSArray+MSSafe.m */,
+				0309FAB2ECCAD1E2299298473387C7B6 /* NSDictionary+MSSafe.h */,
+				07EF0AC546260F7BBAA087D80EF2A25D /* NSDictionary+MSSafe.m */,
+				FB06C2B83D29B82BC5E2A6E8ADF69D1E /* NSMutableSet+MSSafe.h */,
+				42568124BE836731E7720EEC3D075872 /* NSMutableSet+MSSafe.m */,
+				CFFE13BEC7D858B6A6A83EA8DCBC0024 /* NSString+MSSafe.h */,
+				F2260739FE246B2C1E106590250EB01F /* NSString+MSSafe.m */,
+				167BA8D7D13324607A7B8C9215582404 /* Support Files */,
+			);
+			name = MSCrashProtector;
+			path = MSCrashProtector;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -168,13 +174,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3776EC06B5AA3F888FA742C90063FCDD /* Headers */ = {
+		14E169C5D3D4FE69718600878B445B67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A05DFF9B399F35701F289C0464FC735 /* NSArray+MSSafe.h in Headers */,
-				28209DB8F06AB862EF359828D6901029 /* NSDictionary+MSSafe.h in Headers */,
-				1B5045C416B15CA9A5C73A32020C5683 /* NSString+MSSafe.h in Headers */,
+				3D28EAC2CDC58763135A615E0EA78E09 /* NSArray+MSSafe.h in Headers */,
+				DE696B8C82E18E3E67E48235C03B8C23 /* NSDictionary+MSSafe.h in Headers */,
+				58868F8640017B2CD24DD8CA1B148610 /* NSMutableSet+MSSafe.h in Headers */,
+				283CA9074309F3B5DD6F027C1B8A0F11 /* NSString+MSSafe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +205,13 @@
 			productReference = 8DA14180998A12DE6F7D3E0003AF7D87 /* libPods-MSCrashDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FBBEFC82FD77DA427D3A223434553416 /* MSCrashProtector */ = {
+		766C0D4458710770CCC4D6EB38DCCD73 /* MSCrashProtector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29DE26161DE067304DD1B5AC2C30CADB /* Build configuration list for PBXNativeTarget "MSCrashProtector" */;
+			buildConfigurationList = 3B2CBC5ADD0EFBB6C1E79FEC734F00FD /* Build configuration list for PBXNativeTarget "MSCrashProtector" */;
 			buildPhases = (
-				1526094775C40B44507F29018AB84040 /* Sources */,
-				CDC593D51722F210BBE8A8D908094AEB /* Frameworks */,
-				3776EC06B5AA3F888FA742C90063FCDD /* Headers */,
+				B90E9E1F10616071922CBA3B0E1DB14C /* Sources */,
+				A458D08AEC86371DF871BADBEC839AA7 /* Frameworks */,
+				14E169C5D3D4FE69718600878B445B67 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -236,29 +243,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBBEFC82FD77DA427D3A223434553416 /* MSCrashProtector */,
+				766C0D4458710770CCC4D6EB38DCCD73 /* MSCrashProtector */,
 				4D0F31D68ABA484DAC27F422219E6840 /* Pods-MSCrashDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1526094775C40B44507F29018AB84040 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BD254FF177DEE5EE6B6E7F53862D2B4 /* MSCrashProtector-dummy.m in Sources */,
-				C8F38F5B73BF62528B48877E8E6DE06D /* NSArray+MSSafe.m in Sources */,
-				A3187ED54B013F2A7EEB9CAACB49DD9F /* NSDictionary+MSSafe.m in Sources */,
-				FE91A0EC0F893E7F22E3C8857A0430D5 /* NSString+MSSafe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		363F9279C33B7D8FA70C33BE2AB081D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				682AA620CC1E30F66299777074B9B60D /* Pods-MSCrashDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90E9E1F10616071922CBA3B0E1DB14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8187AF396A2AE8F9F3ACDCC58777174 /* MSCrashProtector-dummy.m in Sources */,
+				A61D8B7856ABAACCDA07CB2D8AAC7753 /* NSArray+MSSafe.m in Sources */,
+				CBC8C1FF989A6E9D24ED6B18C3613B1A /* NSDictionary+MSSafe.m in Sources */,
+				2285214432682EE7792839AA323D02AE /* NSMutableSet+MSSafe.m in Sources */,
+				249225D91FC58DA75569BB055DF8CFE4 /* NSString+MSSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,34 +276,12 @@
 		C4ED9BA45114F6F562E81400DEB9E95E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSCrashProtector;
-			target = FBBEFC82FD77DA427D3A223434553416 /* MSCrashProtector */;
+			target = 766C0D4458710770CCC4D6EB38DCCD73 /* MSCrashProtector */;
 			targetProxy = 2F8185C8F0F24827941CFF814995FCF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		27B83005EFA7CC62729913C70DC67D57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133C699A22033522E55515FAEF289295 /* MSCrashProtector.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MSCrashProtector/MSCrashProtector-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		4A44DE60388532A5C808E8A84D50DB19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97A8D84574B1B38804B33F654E752145 /* Pods-MSCrashDemo.release.xcconfig */;
@@ -317,9 +303,9 @@
 			};
 			name = Release;
 		};
-		917417635A13A4C395AA5F0DF251E395 /* Debug */ = {
+		7AF2001587451F0E59A07351FE0EBDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133C699A22033522E55515FAEF289295 /* MSCrashProtector.xcconfig */;
+			baseConfigurationReference = DC80A87FFBC2355F5F8E01DFFF7DF76F /* MSCrashProtector.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -473,6 +459,28 @@
 			};
 			name = Debug;
 		};
+		F201D8F18082B101C7C9111720595A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC80A87FFBC2355F5F8E01DFFF7DF76F /* MSCrashProtector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MSCrashProtector/MSCrashProtector-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,20 +493,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29DE26161DE067304DD1B5AC2C30CADB /* Build configuration list for PBXNativeTarget "MSCrashProtector" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				917417635A13A4C395AA5F0DF251E395 /* Debug */,
-				27B83005EFA7CC62729913C70DC67D57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
 				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2CBC5ADD0EFBB6C1E79FEC734F00FD /* Build configuration list for PBXNativeTarget "MSCrashProtector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AF2001587451F0E59A07351FE0EBDB7 /* Debug */,
+				F201D8F18082B101C7C9111720595A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

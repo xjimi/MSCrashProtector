@@ -10,6 +10,7 @@
 
 #import "NSArray+MSSafe.h"
 #import "NSDictionary+MSSafe.h"
+#import "NSMutableSet+MSSafe.h"
 
 @interface ViewController ()
 
@@ -32,7 +33,6 @@
     [marr insertObject:@111 atIndexInBoundary:100];
     NSLog(@"marr:%@",marr);
 
-    
     //NSDictionary
     NSDictionary* dic = [NSDictionary dictionary];
     [dic objectForKey:nil defaultValue:@"test"];
@@ -42,6 +42,12 @@
     NSMutableDictionary* mdic = [NSMutableDictionary dictionary];
     [mdic setObjectSafe:nil forKey:nil];
     NSLog(@"mdic:%@",mdic);
+    
+    //NSMutableSet
+    NSMutableSet * mset = [NSMutableSet set];
+    [mset removeObjectSafe:nil];
+    [mset addObjectSafe:nil];
+    
 }
 
 - (void)viewDidLoad {

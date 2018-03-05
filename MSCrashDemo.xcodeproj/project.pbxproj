@@ -17,14 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		095C2FF9204D32EB001939EC /* NSMutableSet+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MSSafe.h"; sourceTree = "<group>"; };
-		095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MSSafe.m"; sourceTree = "<group>"; };
-		09A466F3204456E50003312C /* NSArray+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MSSafe.m"; sourceTree = "<group>"; };
-		09A466F4204456E50003312C /* NSArray+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MSSafe.h"; sourceTree = "<group>"; };
-		09A466F62044769A0003312C /* NSDictionary+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MSSafe.m"; sourceTree = "<group>"; };
-		09A466F72044769A0003312C /* NSDictionary+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MSSafe.h"; sourceTree = "<group>"; };
-		09A466F920447EC50003312C /* NSString+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSSafe.h"; sourceTree = "<group>"; };
-		09A466FA20447EC50003312C /* NSString+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MSSafe.m"; sourceTree = "<group>"; };
 		09A466FE2044828F0003312C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		09E1E13D2044421C00EC5259 /* MSCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1E1402044421C00EC5259 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,21 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09A466F2204456E50003312C /* MSCrashProtector */ = {
-			isa = PBXGroup;
-			children = (
-				09A466F4204456E50003312C /* NSArray+MSSafe.h */,
-				09A466F3204456E50003312C /* NSArray+MSSafe.m */,
-				09A466F72044769A0003312C /* NSDictionary+MSSafe.h */,
-				09A466F62044769A0003312C /* NSDictionary+MSSafe.m */,
-				09A466F920447EC50003312C /* NSString+MSSafe.h */,
-				09A466FA20447EC50003312C /* NSString+MSSafe.m */,
-				095C2FF9204D32EB001939EC /* NSMutableSet+MSSafe.h */,
-				095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */,
-			);
-			path = MSCrashProtector;
-			sourceTree = SOURCE_ROOT;
-		};
 		09E1E1342044421C00EC5259 = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +64,6 @@
 		09E1E13F2044421C00EC5259 /* MSCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
-				09A466F2204456E50003312C /* MSCrashProtector */,
 				09E1E1432044421C00EC5259 /* ViewController.h */,
 				09E1E1442044421C00EC5259 /* ViewController.m */,
 				09E1E14E2044421C00EC5259 /* Info.plist */,
