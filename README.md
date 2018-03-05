@@ -27,6 +27,8 @@ An Global protection scheme..
 
 ```objc
         
+    #import "MSCrashProtector.h"
+
     //NSArray
     NSArray* arr = @[@"1"];
     [arr objectAtIndexSafe:10];
