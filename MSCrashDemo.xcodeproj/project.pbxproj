@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		095C2FFB204D32EB001939EC /* NSMutableSet+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */; };
-		09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F3204456E50003312C /* NSArray+MSSafe.m */; };
-		09A466F82044769A0003312C /* NSDictionary+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F62044769A0003312C /* NSDictionary+MSSafe.m */; };
-		09A466FB20447EC50003312C /* NSString+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466FA20447EC50003312C /* NSString+MSSafe.m */; };
 		09A466FF2044828F0003312C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A466FE2044828F0003312C /* Launch Screen.storyboard */; };
 		09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1412044421C00EC5259 /* AppDelegate.m */; };
 		09E1E1452044421C00EC5259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1442044421C00EC5259 /* ViewController.m */; };
@@ -246,13 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				095C2FFB204D32EB001939EC /* NSMutableSet+MSSafe.m in Sources */,
 				09E1E1452044421C00EC5259 /* ViewController.m in Sources */,
 				09E1E1502044421C00EC5259 /* main.m in Sources */,
 				09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */,
-				09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */,
-				09A466FB20447EC50003312C /* NSString+MSSafe.m in Sources */,
-				09A466F82044769A0003312C /* NSDictionary+MSSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
