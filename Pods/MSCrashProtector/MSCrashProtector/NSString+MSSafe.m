@@ -1,6 +1,6 @@
 //
 //  NSString+MSSafe.m
-//  MSCrashDemo
+//  
 //
 //  Created by J on 2014/2/27.
 //  Copyright © 2014年 J. All rights reserved.

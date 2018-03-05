@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095C2FFB204D32EB001939EC /* NSMutableSet+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */; };
 		09A466F5204456F70003312C /* NSArray+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F3204456E50003312C /* NSArray+MSSafe.m */; };
 		09A466F82044769A0003312C /* NSDictionary+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466F62044769A0003312C /* NSDictionary+MSSafe.m */; };
 		09A466FB20447EC50003312C /* NSString+MSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A466FA20447EC50003312C /* NSString+MSSafe.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095C2FF9204D32EB001939EC /* NSMutableSet+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MSSafe.h"; sourceTree = "<group>"; };
+		095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MSSafe.m"; sourceTree = "<group>"; };
 		09A466F3204456E50003312C /* NSArray+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MSSafe.m"; sourceTree = "<group>"; };
 		09A466F4204456E50003312C /* NSArray+MSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MSSafe.h"; sourceTree = "<group>"; };
 		09A466F62044769A0003312C /* NSDictionary+MSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MSSafe.m"; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 				09A466F62044769A0003312C /* NSDictionary+MSSafe.m */,
 				09A466F920447EC50003312C /* NSString+MSSafe.h */,
 				09A466FA20447EC50003312C /* NSString+MSSafe.m */,
+				095C2FF9204D32EB001939EC /* NSMutableSet+MSSafe.h */,
+				095C2FFA204D32EB001939EC /* NSMutableSet+MSSafe.m */,
 			);
 			path = MSCrashProtector;
 			sourceTree = SOURCE_ROOT;
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095C2FFB204D32EB001939EC /* NSMutableSet+MSSafe.m in Sources */,
 				09E1E1452044421C00EC5259 /* ViewController.m in Sources */,
 				09E1E1502044421C00EC5259 /* main.m in Sources */,
 				09E1E1422044421C00EC5259 /* AppDelegate.m in Sources */,
