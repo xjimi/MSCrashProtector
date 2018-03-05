@@ -16,6 +16,7 @@
 		09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E1492044421C00EC5259 /* Assets.xcassets */; };
 		09E1E1502044421C00EC5259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E14F2044421C00EC5259 /* main.m */; };
 		09E1E1632044531C00EC5259 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E14E2044421C00EC5259 /* Info.plist */; };
+		CCADD2FCF21C895104E1C0D3 /* libPods-MSCrashDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F98124F8741E3280FB2CBF0C /* libPods-MSCrashDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		09E1E1492044421C00EC5259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E1E14E2044421C00EC5259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09E1E14F2044421C00EC5259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16D2B0721F991CC12B33F94E /* Pods-MSCrashDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSCrashDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSCrashDemo/Pods-MSCrashDemo.release.xcconfig"; sourceTree = "<group>"; };
+		48B252931E82C815C57CAFFD /* Pods-MSCrashDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSCrashDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSCrashDemo/Pods-MSCrashDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F98124F8741E3280FB2CBF0C /* libPods-MSCrashDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSCrashDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCADD2FCF21C895104E1C0D3 /* libPods-MSCrashDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 			children = (
 				09E1E13F2044421C00EC5259 /* MSCrashDemo */,
 				09E1E13E2044421C00EC5259 /* Products */,
+				78E47F8406099F5E250033E8 /* Pods */,
+				6E1BDC8C39AFDC23FCE71614 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +99,23 @@
 			path = MSCrashDemo;
 			sourceTree = "<group>";
 		};
+		6E1BDC8C39AFDC23FCE71614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F98124F8741E3280FB2CBF0C /* libPods-MSCrashDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78E47F8406099F5E250033E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48B252931E82C815C57CAFFD /* Pods-MSCrashDemo.debug.xcconfig */,
+				16D2B0721F991CC12B33F94E /* Pods-MSCrashDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09E1E1532044421C00EC5259 /* Build configuration list for PBXNativeTarget "MSCrashDemo" */;
 			buildPhases = (
+				1856C25E077E114A168344B2 /* [CP] Check Pods Manifest.lock */,
 				09E1E1392044421C00EC5259 /* Sources */,
 				09E1E13A2044421C00EC5259 /* Frameworks */,
 				09E1E13B2044421C00EC5259 /* Resources */,
+				DD9CC300CB306BF4B9D4E13F /* [CP] Embed Pods Frameworks */,
+				A888170805A65022957F7DE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1856C25E077E114A168344B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSCrashDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A888170805A65022957F7DE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSCrashDemo/Pods-MSCrashDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD9CC300CB306BF4B9D4E13F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSCrashDemo/Pods-MSCrashDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09E1E1392044421C00EC5259 /* Sources */ = {
@@ -281,6 +359,7 @@
 		};
 		09E1E1542044421C00EC5259 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B252931E82C815C57CAFFD /* Pods-MSCrashDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -299,6 +378,7 @@
 		};
 		09E1E1552044421C00EC5259 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D2B0721F991CC12B33F94E /* Pods-MSCrashDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
