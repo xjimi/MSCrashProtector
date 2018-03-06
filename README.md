@@ -25,10 +25,14 @@ An Global protection scheme..
   
 ### Objective-C
 
+```objc   
+
+    #import "MSCrashProtector.h"
+```
+
+
 ```objc
         
-    #import "MSCrashProtector.h"
-
     //NSArray
     NSArray* arr = @[@"1"];
     [arr objectAtIndexSafe:10];
