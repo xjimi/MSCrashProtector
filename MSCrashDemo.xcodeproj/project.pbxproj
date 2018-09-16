@@ -12,7 +12,6 @@
 		09E1E1452044421C00EC5259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E1442044421C00EC5259 /* ViewController.m */; };
 		09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E1492044421C00EC5259 /* Assets.xcassets */; };
 		09E1E1502044421C00EC5259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E14F2044421C00EC5259 /* main.m */; };
-		09E1E1632044531C00EC5259 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E14E2044421C00EC5259 /* Info.plist */; };
 		CCADD2FCF21C895104E1C0D3 /* libPods-MSCrashDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F98124F8741E3280FB2CBF0C /* libPods-MSCrashDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -156,7 +155,6 @@
 			files = (
 				09A466FF2044828F0003312C /* Launch Screen.storyboard in Resources */,
 				09E1E14A2044421C00EC5259 /* Assets.xcassets in Resources */,
-				09E1E1632044531C00EC5259 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
