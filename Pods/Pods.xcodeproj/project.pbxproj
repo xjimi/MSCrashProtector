@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,14 +38,14 @@
 		14B7F393CDB52091A6F1C451345E66F5 /* Pods-MSCrashDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSCrashDemo-resources.sh"; sourceTree = "<group>"; };
 		2C2B9D0C363C6A103305C70B9F4D9B08 /* Pods-MSCrashDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSCrashDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		381362E100BEE4D007A9E0F7C08DCF86 /* MSCrashProtector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSCrashProtector-prefix.pch"; sourceTree = "<group>"; };
-		59142B689B64952006DA07EF74F1598F /* libMSCrashProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMSCrashProtector.a; path = libMSCrashProtector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59142B689B64952006DA07EF74F1598F /* libMSCrashProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSCrashProtector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E4CDD0DDB7A0B4F0226C674BA64A5B6 /* NSArray+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MSSafe.h"; path = "MSCrashProtector/NSArray+MSSafe.h"; sourceTree = "<group>"; };
 		702DBC0ACCBB71EBE14863D3DD22A54A /* NSMutableSet+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+MSSafe.m"; path = "MSCrashProtector/NSMutableSet+MSSafe.m"; sourceTree = "<group>"; };
 		85A9B8319E487D0FD84698709E1664C2 /* NSString+MSSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MSSafe.m"; path = "MSCrashProtector/NSString+MSSafe.m"; sourceTree = "<group>"; };
 		8697AB8F1330EDFF94CAE4903CFE67B4 /* MSCrashProtector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSCrashProtector-dummy.m"; sourceTree = "<group>"; };
-		8DA14180998A12DE6F7D3E0003AF7D87 /* libPods-MSCrashDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MSCrashDemo.a"; path = "libPods-MSCrashDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DA14180998A12DE6F7D3E0003AF7D87 /* libPods-MSCrashDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSCrashDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		946C7C351660629F31D8AC9EC4A9FEE5 /* Pods-MSCrashDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSCrashDemo-frameworks.sh"; sourceTree = "<group>"; };
 		972F768833A44A99D9E2BEECFCDDBA9E /* NSDictionary+MSSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MSSafe.h"; path = "MSCrashProtector/NSDictionary+MSSafe.h"; sourceTree = "<group>"; };
 		97A8D84574B1B38804B33F654E752145 /* Pods-MSCrashDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSCrashDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 				85A9B8319E487D0FD84698709E1664C2 /* NSString+MSSafe.m */,
 				46AA21059BB5484D801B4D54C6D35127 /* Support Files */,
 			);
-			name = MSCrashProtector;
 			path = MSCrashProtector;
 			sourceTree = "<group>";
 		};
@@ -233,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -295,7 +294,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MSCrashProtector/MSCrashProtector-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -337,7 +336,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MSCrashProtector/MSCrashProtector-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
