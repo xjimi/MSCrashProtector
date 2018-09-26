@@ -63,7 +63,7 @@ An Global protection scheme..
 
 ## Credits
 
-MSCrashProtector was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the development of [MOMO](https://www.immomo.com).
+MSCrashProtector was created by [Jiang.Zijia](https://github.com/JZJJZJ).
 
 ## License
 
