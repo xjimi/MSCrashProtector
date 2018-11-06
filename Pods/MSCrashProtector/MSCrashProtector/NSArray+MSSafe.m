@@ -43,7 +43,7 @@
     
     id object = [self objectAtIndexSafe:index];
     if(!object) object = value;
-    return value;
+    return object;
 }
 
 
@@ -53,7 +53,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (NSNumber *)numberAtIndex:(NSUInteger)index defaultValue:(NSNumber *)value{
@@ -62,7 +62,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (NSDictionary *)dictionaryAtIndex:(NSUInteger)index defaultValue:(NSDictionary *)value{
@@ -71,7 +71,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (NSArray *)arrayAtIndex:(NSUInteger)index defaultValue:(NSArray *)value{
@@ -80,7 +80,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (NSData *)dataAtIndex:(NSUInteger)index defaultValue:(NSData *)value{
@@ -89,7 +89,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (NSDate *)dateAtIndex:(NSUInteger)index defaultValue:(NSDate *)value{
@@ -98,7 +98,7 @@
     if(!object){
         object = value;
     }
-    return value;
+    return object;
 }
 
 - (float)floatAtIndex:(NSUInteger)index defaultValue:(float)value{
